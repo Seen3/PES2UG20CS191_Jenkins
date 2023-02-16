@@ -18,6 +18,11 @@ pipeline{
         echo 'Deployment Successful'
       }
     }
+    stage('post-build'){
+      steps{
+        echo 'Done'
+      }
+    }
   }
   post{
     failure{
