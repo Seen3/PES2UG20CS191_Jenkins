@@ -3,13 +3,14 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-        sh 'mvn clean install'
+        sh 'make -C main'
         echo 'Build stage successful'
       }
     }
     stage('Test'){
       steps{
-        sh 'mvn test'
+        sh './
+        sh './test_exec'
         echo 'Test Stage Successful'
         post{
           always{
