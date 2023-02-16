@@ -9,8 +9,8 @@ pipeline{
     }
     stage('Test'){
       steps{
-        sh './hello_exec'
-        sh './test_exec'
+        sh './main/hello_exec'
+        sh './main/test_exec'
         echo 'Test Stage Successful'
         post{
           always{
