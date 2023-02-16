@@ -9,7 +9,7 @@ pipeline{
     }
     stage('Test'){
       steps{
-        sh './
+        sh './hello_exec'
         sh './test_exec'
         echo 'Test Stage Successful'
         post{
@@ -21,7 +21,7 @@ pipeline{
     }
     stage('Deploy'){
       steps{
-        sh 'mvn deploy'
+        sh ''
         echo 'Deployment Successful'
       }
     }
